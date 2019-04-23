@@ -2,12 +2,13 @@
 
     .background{
         background-image: linear-gradient(to bottom, rgb(73, 138, 220), rgb(98, 59, 156));
-        height: 100%;
+        min-height: 100vh;
      
     
     }
     .background.hide{
         animation-name: move-down;
+        animation-fill-mode: forwards; 
     }
     .background.show{
         animation-name: move-menu;
@@ -128,7 +129,7 @@
         from 
         {
             top: 100%;
-            height: 0;
+            height: 0vh;
             
            
         }       
@@ -139,7 +140,7 @@
             width: 100%;
             top: 0;
             display: flex;
-            height: 100%;
+            height: 100vh;
             overflow: hidden;
             
         }
@@ -162,12 +163,13 @@
 
     @keyframes move-down{
         from {
-            /*height: 100vh;*/
+            height: 100vh;
             opacity: 1;
             }
         to 
         { 
             opacity: 0;
+            height: 0vh;
             /*
             background-color: white;
             display: none;
@@ -190,7 +192,7 @@
 
     .forecasts.show{
         display:flex;
-        min-height: 100%;
+        min-height: 100vh;
         opacity: 0;
         background-color: white;
         flex-direction: column;
