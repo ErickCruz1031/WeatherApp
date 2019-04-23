@@ -9,6 +9,17 @@ function createCORSRequest(method, url) {
   return xhr;
 }
 
+function toggleMenu() {
+    console.log("We wanted to toggle");
+    var menu = document.getElementById("forecasts");
+    var top = document.getElementById("background");
+    console.log("We got ", menu);
+    console.log("We also got ", top);
+    top.classList.toggle("hide");
+    menu.classList.toggle("show");
+    return;
+}
+
 function newLocation()
 {
     console.log("We clicked it");
