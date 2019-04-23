@@ -188,14 +188,14 @@ function makeCorsRequest(url = "http://api.openweathermap.org/data/2.5/forecast/
 
                 }
                 document.getElementById("time-one").innerHTML = timeStr;
-                document.getElementById("temp").innerHTML = Math.round(object.list[i].main.temp);
+                document.getElementById("temp").innerHTML = Math.round(object.list[i].main.temp) + String.fromCharCode(176);
                 var cell_obj = document.getElementById("current-icon");
                 changeImage(object.list[i].weather[0].icon, cell_obj);
                 break;
             case 1:
                 console.log("WER ARE HERE");
                 document.getElementById("cell-one-time").innerHTML = hoursStr;
-                document.getElementById("cell-one-temp").innerHTML = Math.round(object.list[i].main.temp);
+                document.getElementById("cell-one-temp").innerHTML = Math.round(object.list[i].main.temp) + String.fromCharCode(176);
                 var cell_obj = document.getElementById("cell-one-icon");
                 changeImage(object.list[i].weather[0].icon, cell_obj);
                 break;
@@ -205,28 +205,28 @@ function makeCorsRequest(url = "http://api.openweathermap.org/data/2.5/forecast/
            
             case 2:
                 document.getElementById("cell-two-time").innerHTML = hoursStr;
-                document.getElementById("cell-two-temp").innerHTML = Math.round(object.list[i].main.temp);
+                document.getElementById("cell-two-temp").innerHTML = Math.round(object.list[i].main.temp) + String.fromCharCode(176);
                 var cell_obj = document.getElementById("cell-two-icon");
                 changeImage(object.list[i].weather[0].icon, cell_obj);
                 break;
             
             case 3:
                 document.getElementById("cell-three-time").innerHTML = hoursStr;
-                document.getElementById("cell-three-temp").innerHTML = Math.round(object.list[i].main.temp);
+                document.getElementById("cell-three-temp").innerHTML = Math.round(object.list[i].main.temp) + String.fromCharCode(176);
                 var cell_obj = document.getElementById("cell-three-icon");
                 changeImage(object.list[i].weather[0].icon, cell_obj);
                 break;
         
             case 4:
                 document.getElementById("cell-four-time").innerHTML = hoursStr;
-                document.getElementById("cell-four-temp").innerHTML = Math.round(object.list[i].main.temp);
+                document.getElementById("cell-four-temp").innerHTML = Math.round(object.list[i].main.temp) + String.fromCharCode(176);
                 var cell_obj = document.getElementById("cell-four-icon");
                 changeImage(object.list[i].weather[0].icon, cell_obj);
                 break;
         
             case 5:
                 document.getElementById("cell-five-time").innerHTML = hoursStr;
-                document.getElementById("cell-five-temp").innerHTML = Math.round(object.list[i].main.temp);
+                document.getElementById("cell-five-temp").innerHTML = Math.round(object.list[i].main.temp) + String.fromCharCode(176);
                 var cell_obj = document.getElementById("cell-five-icon");
                 changeImage(object.list[i].weather[0].icon, cell_obj);
                 break;
