@@ -1,0 +1,102 @@
+<!doctype HTML>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,500" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,500" rel="stylesheet"> 
+  </head>
+
+<div id="background">
+<body>
+<header>
+    <div class="title">Local Weather </div>
+    <div class="title"> Six Hour Forecast</div>
+    <div> Northern Califronia with Doppler Radar</div>
+</header>
+
+<div class="input"> 
+    <div> Forecast for</div>
+    <div class="input-form">
+        <div> 
+            <input type="text" id="input-field" value="Davis, CA">  
+            <button type="button" id="input" onclick="newLocation()"> Submit</button>
+        </div>
+    </div>
+    
+</div>
+
+<div class="image">
+    <img id="current-icon" src="assets/fewclouds-day.svg" alt="Weather Icon">
+</div>
+<div class="time-temp">
+    <div id="current"> 
+        <div> Current </div>
+        <div id="time-one"> 8PM</div>
+    </div>
+    <div class="verticalLine"> </div>
+    <div id="temp"> 60</div>
+</div>
+
+</body>
+
+
+<div class="forecasts">
+    <div class="weather-cell">
+        <div class="weather-time" id="cell-one-time"> 1PM</div>
+        <div class="weather-icon">
+             <img id="cell-one-icon" src="assets/fewclouds-day.svg" alt="Weather Icon">
+        </div>
+        <div class="weather-temp" id = "cell-one-temp"> 68</div>
+  
+    </div>
+   <div> <hr></div> 
+
+    <div class="weather-cell">
+            <div class="weather-time" id="cell-two-time"> 1PM</div>
+            <div class="weather-icon"> 
+                <img id="cell-two-icon" src="assets/fewclouds-day.svg" alt="Weather Icon">
+            </div>
+            <div class="weather-temp" id="cell-two-temp"> 68</div>
+   
+    </div>
+    <div> <hr></div> 
+
+    <div class="weather-cell">
+            <div class="weather-time" id="cell-three-time"> 1PM</div>
+            <div class="weather-icon"> 
+                <img  id="cell-three-icon" src="assets/fewclouds-day.svg" alt="Weather Icon">
+            </div>
+            <div class="weather-temp" id="cell-three-temp"> 68</div>
+           
+    </div>
+    <div> <hr></div> 
+
+    <div class="weather-cell">
+            <div class="weather-time" id="cell-four-time"> 1PM</div>
+            <div class="weather-icon">
+                 <img id="cell-four-icon" src="assets/fewclouds-day.svg" alt="Weather Icon">
+            </div>
+            <div class="weather-temp" id="cell-four-temp"> 68</div>
+            
+    </div>
+    <div> <hr></div> 
+
+    <div class="weather-cell">
+            <div class="weather-time" id="cell-five-time"> 1PM</div>
+            <div class="weather-icon">
+                 <img id="cell-five-icon" src="assets/fewclouds-day.svg" alt="Weather Icon">
+            </div>
+            <div class="weather-temp" id="cell-five-temp"> 68</div>
+    </div>
+
+
+</div>
+
+
+</div>
+<script src="index.js"></script>
+
+</html>
