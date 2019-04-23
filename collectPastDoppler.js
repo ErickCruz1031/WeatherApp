@@ -11,10 +11,20 @@ function addToArray(newImage) {
 		count = count+1;
 		if (count >= 10) {
 			console.log("Got 10 doppler images");
-			let dop3 = document.getElementById("doppler-three");
-			dop3.src  = imageArray[2].src;
-			console.log(imageArray[0]);
-		}
+			let dop = document.getElementById("doppler-three");
+
+			let counter = 0;
+			let elapsed = setInterval( function(){
+				if (counter >= 10)
+				{
+					counter = 0;
+				}
+				console.log("Counter is ", counter);
+				dop.src  = imageArray[counter].src;
+				counter++;
+
+			}, 60);
+		}v//Call this when all of the images have been loaded
 	}
 }
 
