@@ -7,7 +7,7 @@
     
     }
 
-    #doppler{
+    .doppler{
         display: none;
     }
 
@@ -368,9 +368,39 @@
     }
 
     #doppler{
-        align-self: center;
+        clip-path: circle(30%);
+        align-self: flex-start;
+        position: relative;
+        width: 50%;
+        height: 20vh;
+       
+    }
+    
+
+    #doppler-one{
+        clip-path: circle(30%);
+        position: absolute;
+        width: 60%;
+        right: 0;
+
+    }
+    #doppler-two{
+        clip-path: circle(30%);
+        position: absolute;
+        width: 60%;
+        right: 0;
+
         
     }
+    #doppler-three{
+        clip-path: circle(30%);
+        position: absolute;
+        width: 60%;
+        right: 0;
+
+    }
+
+
     #current{
         padding-right: 2%;
 
