@@ -2,13 +2,19 @@
 
     .background{
         background-image: linear-gradient(to bottom, rgb(73, 138, 220), rgb(98, 59, 156));
+        height: 100%;
+     
     
     }
     .background.hide{
         animation-name: move-down;
     }
+    .background.show{
+        animation-name: move-menu;
+    }
     input{
-        background-color:   rgb(73, 138, 220);
+        
+        animation-name: reset;
     }    
 
     body{
@@ -76,12 +82,12 @@
         margin-right: auto;
 
     
-        width: 60%;
+        width: 40%;
     }
     .time-temp{
         display:flex;
         color: white;
-        height: 100;
+   
 
         flex-direction: row;
         
@@ -139,15 +145,35 @@
         }
         
     }
-
-    @keyframes move-down{
-        from {
-            height: 100vh;}
-        to 
-        { 
+    @keyframes reset {
+        from{
             display: none;
             opacity: 0;
             height: 0vh;
+        }
+        to 
+        {
+            height: 100vh;
+            opacity: 1;
+            display: flex;
+
+        }
+    }
+
+    @keyframes move-down{
+        from {
+            /*height: 100vh;*/
+            opacity: 1;
+            }
+        to 
+        { 
+            opacity: 0;
+            /*
+            background-color: white;
+            display: none;
+            opacity: 0;
+            height: 0vh;
+            */
         }
     }
     
@@ -159,10 +185,12 @@
 
     .forecasts{
         display: none;
+        min-height: 100%;
     }
 
     .forecasts.show{
         display:flex;
+        min-height: 100%;
         opacity: 0;
         background-color: white;
         flex-direction: column;
@@ -205,7 +233,7 @@
     }
 
     .weather-icon{
-        width:30%;
+        width:20%;
     }
 
     .weather-temp{
@@ -223,6 +251,15 @@
         font-size: 350%;
         padding-left: 50%;
     }
+
+    .menu-toggle-back{
+        color: blue;
+        align-self: center;
+        font-size: 350%;
+ 
+        
+    }
+
 
    
 

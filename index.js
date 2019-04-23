@@ -20,6 +20,15 @@ function toggleMenu() {
     return;
 }
 
+function toggleMenuBack(){
+    console.log("In the other ooe");
+    var menu = document.getElementById("forecasts");
+    var top = document.getElementById("background");
+    top.classList.toggle("background");
+    menu.classList.toggle("forecasts");
+    return;
+}
+
 function newLocation()
 {
     console.log("We clicked it");
