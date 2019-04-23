@@ -12,13 +12,13 @@
 <div id="background" class="background">
 <body id="top">
 <header>
-    <div class="title">Local Weather </div>
+    <div class="title">&#160;Local Weather &#160;</div>
     <div class="title"> Six Hour Forecast</div>
     <div> Northern Califronia with Doppler Radar</div>
 </header>
 
 <div class="input"> 
-    <div> Forecast for</div>
+    <div id="input-label"> Forecast for &#160;</div>
     <div class="input-form">
         <div> 
             <input type="text" id="input-field" value="Davis, CA">  
@@ -27,20 +27,29 @@
     </div>
     
 </div>
+<div class="menu-top">
 
-<div class="image">
-    <img id="current-icon" src="assets/fewclouds-day.svg" alt="Weather Icon">
-</div>
+    <div class="current-cell">
 
-<div class="time-temp">
-    <div id="current"> 
-        <div> Current </div>
-        <div id="time-one"> 8PM</div>
+    <div class="images">
+        <img id="current-icon" src="assets/fewclouds-day.svg" alt="Weather Icon">
     </div>
-    <div class="verticalLine"> </div>
-    <div id="temp"> 60</div>
-</div>
 
+    <div class="time-temp">
+        <div id="current"> 
+            <div> Current </div>
+            <div id="time-one"> 8PM</div>
+        </div>
+        <div class="verticalLine"> </div>
+        <div id="temp"> 60</div>
+    </div>
+
+    </div>
+
+    <div>
+        <img id="doppler" src="assets/fewclouds-day.svg" alt="Weather Icon">
+    </div>
+</div>
 
 <div class="menu-toggle" onclick= "toggleMenu()"> &#94; </div>
 </body>
@@ -58,6 +67,7 @@
   
     </div>
    <div> <hr></div> 
+   <div class="verticalLine-bottom"> </div>
 
     <div class="weather-cell">
             <div class="weather-time" id="cell-two-time"> 1PM</div>
@@ -68,6 +78,7 @@
    
     </div>
     <div> <hr></div> 
+    <div class="verticalLine-bottom"> </div>
 
     <div class="weather-cell">
             <div class="weather-time" id="cell-three-time"> 1PM</div>
@@ -78,6 +89,7 @@
            
     </div>
     <div> <hr></div> 
+    <div class="verticalLine-bottom"> </div>
 
     <div class="weather-cell">
             <div class="weather-time" id="cell-four-time"> 1PM</div>
@@ -88,6 +100,7 @@
             
     </div>
     <div> <hr></div> 
+    <div class="verticalLine-bottom"> </div>
 
     <div class="weather-cell">
             <div class="weather-time" id="cell-five-time"> 1PM</div>
