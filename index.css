@@ -297,7 +297,7 @@
 
 }
 
-@media (min-width: 481px) and (max-width: 780px){
+@media (min-width: 481px) and (max-width: 900px){
 
 
     .background{
@@ -531,7 +531,7 @@
 
 }
 
-@media (min-width: 781px){
+@media (min-width: 901px){
 
     .background{
         font-family: 'IBM Plex Sans', sans-serif;
@@ -548,13 +548,13 @@
     #desktop{
         color: white;
         font-family: 'IBM Plex Sans', sans-serif;
-        font-size: 220%;
+        font-size: 200%;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         padding-bottom: 5%;
         padding-top: 5%;
-        width: 50%;
+        width: 80%;
     }
 
     #desk-title2{
@@ -576,13 +576,56 @@
         align-self: center;
         align-content: space-evenly;
     }
-    #doppler-one-desk{
+
+
+    #doppler-desk{
         /*
-        padding-top: 20%;
-        height: 50%;
+        clip-path: circle(30%);
+        align-self: flex-start;
+        position: relative;
         width: 50%;
-        align-self: center;
+        height: 20vh;
+          align-self: center;
         */
+
+        width: 50%;
+        height: 100%;
+     
+        clip-path: circle(35%);
+      
+        align-self: flex-start;
+        position: relative;
+       
+    }
+    
+
+    #doppler-one-desk{
+        clip-path: circle(35%);
+        position: absolute;
+        height: 70%;
+        top: 0;
+        right: 0;
+
+    }
+    #doppler-two-desk{
+        clip-path: circle(35%);
+        position: absolute;
+        height: 70%;
+        top: 0;
+        right: 0;
+
+        
+    }
+    #doppler-three-desk{
+        clip-path: circle(35%);
+        position: absolute;
+        height: 70%;
+        top: 0;
+        right: 0;
+
+    }
+    /*
+    #doppler-one-desk{
         width: 80%;
         height: 100%;
         clip-path: circle(45%);
@@ -593,6 +636,8 @@
 
    
     }
+*/
+
     .input{
         font-size: 200%;
         color: white;
@@ -756,6 +801,8 @@
         background-color: rgb(73, 138, 220);
 
     }
+
+    
 
 
 }
