@@ -189,6 +189,13 @@ function makeCorsRequest(url = "http://api.openweathermap.org/data/2.5/forecast/
                 }
                 document.getElementById("time-one").innerHTML = timeStr;
                 document.getElementById("temp").innerHTML = Math.round(object.list[i].main.temp) + String.fromCharCode(176);
+
+                document.getElementById("time-desk").innerHTML = timeStr;
+                document.getElementById("desk-temp-ver").innerHTML = Math.round(object.list[i].main.temp) + String.fromCharCode(176);
+
+                
+
+
                 var cell_obj = document.getElementById("current-icon");
                 changeImage(object.list[i].weather[0].icon, cell_obj);
                 break;
