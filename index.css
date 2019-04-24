@@ -35,7 +35,7 @@
         
     }
 
-    header
+   #mobile-tablet
     {
         color:white;
         display: flex;
@@ -46,6 +46,10 @@
 
         font-family: 'IBM Plex Sans', sans-serif;
         
+    }
+
+    #desktop{
+        display: none;
     }
 
     .title{
@@ -275,6 +279,19 @@
         
     }
 
+    .doppler-desk{
+        display: none;
+    }
+
+    .time-desk{
+        display: none;
+    }
+
+    .temp-desk{
+        display: none;
+    }
+
+
 
    
 
@@ -311,17 +328,22 @@
         align-self: center;
     }
 
-    header{
+    #mobile-tablet{
         color:white;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
         padding-top: 10%;
-        font-size: 140%;
+        font-size: 160%;
         align-content: center;
 
         font-family: 'IBM Plex Sans', sans-serif;
+    }
+
+    
+    #desktop{
+        display: none;
     }
 
     .input{
@@ -494,6 +516,222 @@
         padding-top: 40%;
         padding-bottom: 40%;
         
+    }
+
+    .doppler-desk{
+        display: none;
+    }
+    .time-desk{
+        display: none;
+    }
+    .temp-desk{
+        display: none;
+    }
+
+
+}
+
+@media (min-width: 781px){
+
+    .background{
+        font-family: 'IBM Plex Sans', sans-serif;
+        width: 100%;
+        height: 20%;
+        background-image: linear-gradient(to bottom, rgb(73, 138, 220), rgb(98, 59, 156));
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+
+    }
+
+    
+    #desktop{
+        color: white;
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 200%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding-bottom: 5%;
+        padding-top: 5%;
+    }
+
+    .doppler{
+        display: none;
+    }
+    .desktop{
+  
+        padding-left: 8%;
+        
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        width: 60%;
+        align-self: center;
+        align-content: space-evenly;
+    }
+    #doppler-one-desk{
+        /*
+        padding-top: 20%;
+        height: 50%;
+        width: 50%;
+        align-self: center;
+        */
+        width: 80%;
+        height: 100%;
+        clip-path: circle(45%);
+        align-self: center;
+        align-self: flex-start;
+        position: relative;
+
+
+   
+    }
+    .input{
+        font-size: 200%;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        padding-bottom: 5%;
+       
+    }
+
+    #current-icon{
+
+        align-self: center;
+
+      
+        width: 60%;
+
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    .current-cell{
+        font-family: 'Saira Extra Condensed', sans-serif;
+        width: 50%;
+        color: white;
+        align-self: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: space-evenly;
+        font-size: 350%;
+        padding-bottom: 5%;
+        /*
+        justify-content: center;
+        align-items: space-between;
+        font-size: 200%;
+        */
+    }
+    .time-temp{
+        display: none;
+        padding-left: 10%;
+    }
+    .images{
+        display: flex;
+        flex-direction: row;
+    }
+
+    #current{
+        display: none;
+    }
+
+    .time-desk{
+        padding-right: 10%;
+        align-self: center;
+  
+    }
+    .temp-desk{
+        padding-left: 15%;
+        align-self: center;
+    }
+
+    .time-temp{
+        align-self: center;
+        display: none;
+
+        flex: 1 1 auto;
+    }
+
+    .verticalLine {
+        display: none
+       
+    }
+
+    .verticalLine-bottom{
+        border-left:  solid #8a8989;
+
+    }
+
+    
+    .forecasts{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        align-items: space-evenly;
+        flex: 1 1 auto;
+       
+
+    }
+
+    .menu-toggle{
+        display: none;
+    }
+
+    .menu-toggle-back{
+        display: none;
+    }
+
+    .weather-cell{
+        font-family: 'Saira Extra Condensed', sans-serif;
+        background-color: white;
+        color: black;
+        width: 20%;
+        flex-grow : 1;
+
+        font-size: 140%;
+        display: flex;
+        flex-direction: column;
+
+        align-self: center;
+        
+        align-items: space-evenly;
+        align-content: center;
+        flex: 1 1 auto;
+
+        
+        
+    }
+
+    .weather-time{
+        padding-top: 10%;
+        font-weight: 200;
+        font-size: 140%;
+        align-self: center;
+        height: 30%;
+    }
+
+    .weather-temp{
+        align-self: center;
+        height: 30%;
+        font-size: 200%;
+    }
+    .weather-icon{
+        align-self: center;
+        height: 10vh;
+        width: 60%;
+        padding-top: 30%;
+        padding-bottom: 40%;
+        
+    }
+    #mobile-tablet{
+        display:none;
     }
 
 

@@ -12,51 +12,71 @@
   </head>
 
 <div id="background" class="background">
-<body id="top">
-<header>
-    <div class="title">&#160;Local Weather &#160;</div>
-    <div class="title"> Six Hour Forecast</div>
-    <div> Northern Califronia with Doppler Radar</div>
-</header>
+<div class="desktop">
+    <body id="top">
+    <header id="mobile-tablet">
+        <div class="title">&#160;Local Weather &#160;</div>
+        <div class="title"> Six Hour Forecast</div>
+        <div> Northern Califronia with Doppler Radar</div>
+    </header>
 
-<div class="input"> 
-    <div id="input-label"> Forecast for &#160;</div>
-    <div class="input-form">
-        <div> 
-            <input type="text" id="input-field" value=" &#160; Davis, CA">  
-            <button type="button" id="input" onclick="newLocation()"> Submit</button>
+    <header id="desktop">
+            <div class="title">&#160;Local Weather Six Hour Forecast</div>
+            <div> Northern Califronia with Doppler Radar</div>
+    </header>
+
+    <div class="input"> 
+        <div id="input-label"> Forecast for &#160;</div>
+        <div class="input-form">
+            <div> 
+                <input type="text" id="input-field" value=" &#160; Davis, CA">  
+                <button type="button" id="input" onclick="newLocation()"> Submit</button>
+            </div>
+        </div>
+        
+    </div>
+    <div class="menu-top">
+
+        <div class="current-cell">
+
+        <div class="time-desk">
+            <div> Currrent</div>
+            <div id="time-desk"> 9PM</div>
+        </div>            
+
+        <div class="images">
+            <img id="current-icon" src="assets/fewclouds-day.svg" alt="Weather Icon">
+            <div class="temp-desk"> 60 </div>
+        </div>
+
+       
+
+
+        <div class="time-temp">
+            <div id="current"> 
+                <div> Current </div>
+                <div id="time-one"> 8PM</div>
+            </div>
+            <div class="verticalLine"> </div>
+            <div id="temp"> 60 </div> 
+        </div>
+
+        </div>
+
+        <div class="doppler">
+            <img class="dop-img" id="doppler-one" src="http://radar.weather.gov/ridge/Overlays/Topo/Short/DAX_Topo_Short.jpg" alt="Topographic Map">
+            <img class="dop-img"  id="doppler-two" src="http://radar.weather.gov/ridge/Overlays/Cities/Short/DAX_City_Short.gif" alt="City Names">
+            <img class="dop-img" id="doppler-three" src="https://radar.weather.gov/ridge/RadarImg/N0R/DAX_N0R_0.gif " alt="Radar">
         </div>
     </div>
-    
-</div>
-<div class="menu-top">
 
-    <div class="current-cell">
-
-    <div class="images">
-        <img id="current-icon" src="assets/fewclouds-day.svg" alt="Weather Icon">
-    </div>
-
-    <div class="time-temp">
-        <div id="current"> 
-            <div> Current </div>
-            <div id="time-one"> 8PM</div>
-        </div>
-        <div class="verticalLine"> </div>
-        <div id="temp"> 60 </div> 
-    </div>
-
-    </div>
-
-    <div class="doppler">
-        <img class="dop-img" id="doppler-one" src="http://radar.weather.gov/ridge/Overlays/Topo/Short/DAX_Topo_Short.jpg" alt="Topographic Map">
-        <img class="dop-img"  id="doppler-two" src="http://radar.weather.gov/ridge/Overlays/Cities/Short/DAX_City_Short.gif" alt="City Names">
-        <img class="dop-img" id="doppler-three" src="https://radar.weather.gov/ridge/RadarImg/N0R/DAX_N0R_0.gif " alt="Radar">
-    </div>
+    <div class="menu-toggle" onclick= "toggleMenu()"> &#94; </div>
+    </body>
 </div>
 
-<div class="menu-toggle" onclick= "toggleMenu()"> &#94; </div>
-</body>
+<div class="doppler-desk">
+    <img class="dop-img" id="doppler-one-desk" src="http://radar.weather.gov/ridge/Overlays/Topo/Short/DAX_Topo_Short.jpg" alt="Topographic Map">
+</div>
 </div>
 
 
