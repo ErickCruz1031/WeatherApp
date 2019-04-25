@@ -40,7 +40,42 @@ function newLocation()
     {
         console.log(tokens[i]);
     }
-    var address = "http://api.openweathermap.org/data/2.5/forecast/hourly?q=" + tokens[0] + "," + tokens[1] + "&units=imperial&APPID=96ed4c23f594e2d485971a825906a701";
+    
+    if (isNaN(tokens[0])) //If its not the zip
+    {
+        console.log("Field is  ", location);
+        //var address = "http://api.openweathermap.org/data/2.5/forecast/hourly?q=" + tokens[0] +  "," + tokens[1] + "&units=imperial&APPID=96ed4c23f594e2d485971a825906a701";
+        
+        /*
+        for(var i = 0; i < tokens.length; i++)
+        {
+            address = address + tokens[i] + ",";
+        }
+        */
+        var address = "http://api.openweathermap.org/data/2.5/forecast/hourly?q="  + location + "&units=imperial&APPID=96ed4c23f594e2d485971a825906a701";
+        
+
+    }
+    else{//Do the zip code
+        var address = "http://api.openweathermap.org/data/2.5/forecast/hourly?zip=" + location + "&units=imperial&APPID=96ed4c23f594e2d485971a825906a701";
+        /*
+        for(var i = 0; i < tokens.length; i++)
+        {
+            address = address + tokens[i] + ",";
+        }
+        address = address + "&units=imperial&APPID=96ed4c23f594e2d485971a825906a701";
+        */
+        
+
+    }
+
+    console.log("The new URL is ", address);
+    
+    
+    
+    
+    
+    //+ tokens[0] + "," + tokens[1] + "&units=imperial&APPID=96ed4c23f594e2d485971a825906a701";
     var URL = encodeURI(address);
     makeCorsRequest(URL);
     console.log("The new URL is ", URL);
@@ -141,7 +176,7 @@ function makeCorsRequest(url = "http://api.openweathermap.org/data/2.5/forecast/
       {
           console.log(object.city.coord.lat);
           console.log(object.city.coord.lon);
-          alert("City Not Found 1!");
+          alert("City Not Found!");
           return;
       }
 
@@ -149,7 +184,7 @@ function makeCorsRequest(url = "http://api.openweathermap.org/data/2.5/forecast/
       {
             console.log(object.city.coord.lat);
             console.log(object.city.coord.lon);
-          alert("City Not Found 2");
+          alert("City Not Found!");
           return;
       }
 
