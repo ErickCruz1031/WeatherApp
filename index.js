@@ -171,6 +171,17 @@ function makeCorsRequest(url = "http://api.openweathermap.org/data/2.5/forecast/
       let responseStr = xhr.responseText;  // get the JSON string 
       let object = JSON.parse(responseStr);  // turn it into an object
 
+      console.log("Goung here with ", object.cod);
+
+      if (object.cod == 404)
+      {
+          console.log("THE REQUEST DID NOT WORK");
+          document.getElementById("input-field").value = "Davis, CA";
+          alert("City Not Found!");
+          makeCorsRequest();
+          return;
+      }
+
       //check if the city is within the radius
       if ((object.city.coord.lat > 40) || (object.city.coord.lat < 36))
       {
