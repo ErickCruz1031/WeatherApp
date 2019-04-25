@@ -203,6 +203,7 @@ function makeCorsRequest(url = "http://api.openweathermap.org/data/2.5/forecast/
       for(i = 0; i < 6; i++)
       {
         var date = new Date(object.list[i].dt * 1000);
+        //var date = new Date(Math.floor(object.list[i].dt * 1000));
         var hours = date.getHours();
         if (hours == 12)
         {
@@ -252,6 +253,9 @@ function makeCorsRequest(url = "http://api.openweathermap.org/data/2.5/forecast/
                     }
 
                 }
+
+                //This is teh changge
+                //document.getElementById("time-one").innerHTML = hoursStr;
                 document.getElementById("time-one").innerHTML = timeStr;
                 document.getElementById("temp").innerHTML = Math.round(object.list[i].main.temp) + String.fromCharCode(176);
 
