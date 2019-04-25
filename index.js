@@ -135,6 +135,25 @@ function makeCorsRequest(url = "http://api.openweathermap.org/data/2.5/forecast/
       
       let responseStr = xhr.responseText;  // get the JSON string 
       let object = JSON.parse(responseStr);  // turn it into an object
+
+      //check if the city is within the radius
+      if ((object.city.coord.lat > 40) || (object.city.coord.lat < 36))
+      {
+          console.log(object.city.coord.lat);
+          console.log(object.city.coord.lon);
+          alert("City Not Found 1!");
+          return;
+      }
+
+      if ((object.city.coord.lon < -123) || (object.city.coord.lon > -118))
+      {
+            console.log(object.city.coord.lat);
+            console.log(object.city.coord.lon);
+          alert("City Not Found 2");
+          return;
+      }
+
+
       for(i = 0; i < 6; i++)
       {
         var date = new Date(object.list[i].dt * 1000);
