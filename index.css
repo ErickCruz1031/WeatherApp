@@ -296,7 +296,7 @@
    
 
 }
-
+/*
 @media (min-width: 481px) and (max-width: 900px){
 
 
@@ -394,7 +394,7 @@
         align-self: flex-start;
         position: relative;
         width: 50%;
-        height: 20vh;
+        height: 100%;
        
     }
     
@@ -403,6 +403,7 @@
         clip-path: circle(30%);
         position: absolute;
         width: 60%;
+        height: 50%;
         right: 0;
 
     }
@@ -410,6 +411,7 @@
         clip-path: circle(30%);
         position: absolute;
         width: 60%;
+        height: 50%;
         right: 0;
 
         
@@ -418,6 +420,7 @@
         clip-path: circle(30%);
         position: absolute;
         width: 60%;
+        height: 50%;
         right: 0;
 
     }
@@ -530,8 +533,252 @@
 
 
 }
+*/
 
-@media (min-width: 901px){
+@media (min-width: 481px) and (max-width: 1024px){
+
+
+    .background{
+        font-family: 'IBM Plex Sans', sans-serif;
+        width: 100%;
+        height: 60%;;
+        background-image: linear-gradient(to bottom, rgb(73, 138, 220), rgb(98, 59, 156));
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        
+    }
+    body{
+        color: white;
+        display: flex;
+        flex-direction: row ;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+
+    #current-icon{
+        padding-top: 10%;
+        padding-bottom: 10%;
+        padding-left: 3%;
+        width: 50%;
+        height: 15vh;
+        align-self: center;
+    }
+
+    #mobile-tablet{
+        color:white;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 10%;
+        font-size: 160%;
+        align-content: center;
+
+        font-family: 'IBM Plex Sans', sans-serif;
+    }
+
+    
+    #desktop{
+        display: none;
+    }
+
+    .input{
+        padding-top: 4%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;;
+        font-size: 180%;
+       
+    }
+
+    #input-field{
+        font-weight: lighter;
+    }
+
+    input{
+        background-color: rgb(64, 19, 170);
+
+        color: white;
+        border: 2px grey;
+        height: 160%;
+
+    }
+
+    button{
+        color: white;
+        background-color: rgb(73, 138, 220);
+
+    }
+
+    .current-cell{
+        font-family: 'Saira Extra Condensed', sans-serif;
+        display: flex;
+        flex-direction: column;
+        padding-left: 20%;
+        width: 50%;
+        padding-bottom: 10%;
+    }
+
+    .menu-top{
+        display: flex;
+        flex-direction: row;
+    }
+
+    #doppler{
+        clip-path: circle(30%);
+        align-self: flex-start;
+ 
+        position: relative;
+        width: 60%;
+        height: 45%;
+     
+       
+    }
+    
+
+    #doppler-one{
+        clip-path: circle(30%);
+        position: absolute;
+        width: 60%;
+        height: 45%;
+        right: 0;
+  
+
+    }
+    #doppler-two{
+        clip-path: circle(30%);
+        position: absolute;
+        width: 60%;
+        height: 45%;
+        right: 0;
+    
+
+        
+    }
+    #doppler-three{
+        clip-path: circle(30%);
+        position: absolute;
+        width: 60%;
+        height: 45%;
+        right: 0;
+        
+
+    }
+
+
+    #current{
+        padding-right: 5%;
+
+    }
+    #temp{
+        padding-left: 5%;
+        align-self: center;
+
+    }
+
+    .time-temp{
+        display:flex;
+        color: white;
+   
+
+        flex-direction: row;
+        
+        justify-content: flex-start;
+        font-size: 250%;
+
+   
+    }
+    .verticalLine {
+        border-left:  solid #8a8989;
+       
+    }
+
+    .verticalLine-bottom{
+        border-left:  solid #8a8989;
+
+    }
+    .menu-toggle{
+        display: none;
+    }
+
+
+
+
+
+    .forecasts{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        align-items: space-evenly;
+        flex: 1 1 auto;
+       
+
+    }
+
+    .weather-cell{
+        font-family: 'Saira Extra Condensed', sans-serif;
+        background-color: white;
+        color: black;
+        width: 20%;
+        flex-grow : 1;
+
+        font-size: 140%;
+        display: flex;
+        flex-direction: column;
+
+        align-self: center;
+        
+        align-items: space-evenly;
+        align-content: center;
+        flex: 1 1 auto;
+
+        
+        
+    }
+
+    .weather-time{
+        padding-top: 10%;
+        font-weight: 200;
+        font-size: 140%;
+        align-self: center;
+        height: 30%;
+    }
+
+    .weather-temp{
+        align-self: center;
+        height: 30%;
+        font-size: 200%;
+    }
+    .weather-icon{
+        align-self: center;
+        height: 10vh;
+        width: 60%;
+        padding-top: 40%;
+        padding-bottom: 40%;
+        
+    }
+
+    .doppler-desk{
+        display: none;
+    }
+    .time-desk{
+        display: none;
+    }
+    .temp-desk{
+        display: none;
+    }
+
+
+}
+
+
+@media (min-width: 1025px){
 
     .background{
         font-family: 'IBM Plex Sans', sans-serif;
