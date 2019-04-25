@@ -567,8 +567,10 @@
     }
 
     #mobile-tablet{
+        
         color:white;
-        display: flex;
+        display: none;
+
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
@@ -581,7 +583,20 @@
 
     
     #desktop{
-        display: none;
+        display: flex;
+        flex-direction: column;
+        color:white;
+        justify-content: center;
+        padding-top: 10%;
+        font-size: 160%;
+        font-family: 'IBM Plex Sans', sans-serif;
+    }
+
+    #desk-title1{
+        align-self: center;
+    }
+    #desk-title2{
+        align-self: center;
     }
 
     .input{
