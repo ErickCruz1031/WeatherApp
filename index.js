@@ -208,16 +208,20 @@ function makeCorsRequest(url = "http://api.openweathermap.org/data/2.5/forecast/
         if (hours == 12)
         {
             
-            var hoursStr = String(hours) + ":00" + "pm";
+            var hoursStr = String(hours) + ":00" + " pm";
         }
         else if (hours > 12)
         {
             hours = hours - 12;
-            var hoursStr = String(hours) + ":00" + "pm";
+            var hoursStr = String(hours) + ":00" + " pm";
         }
         else
         {
-            var hoursStr = String(hours) + ":00" + "am";
+            if (hours == 0)
+            {
+                hours = 12;
+            }
+            var hoursStr = String(hours) + ":00" + " am";
         }
 
         switch(i)
@@ -232,24 +236,28 @@ function makeCorsRequest(url = "http://api.openweathermap.org/data/2.5/forecast/
                 {
                     console.log("the time is more than 12");
                     var timeStr = today.getHours() - 12;
+                    if ((today.getHours()) - 12 == 0)
+                    {
+                        timeStr = "12";
+                    }
                     if (today.getMinutes() < 10)
                     {
-                        timeStr = timeStr + ":"  + "0" + today.getMinutes()+ " pm";  
+                        timeStr = timeStr + ":"  + "0" + today.getMinutes()+ "pm";  
                     }
                     else
                     {
-                        timeStr = timeStr + ":" + today.getMinutes() + " pm";
+                        timeStr = timeStr + ":" + today.getMinutes() + "pm";
                     }
                 }
                 else{
                     var timeStr = today.getHours();
                     if (today.getMinutes() < 10)
                     {
-                        timeStr = today.getHours() + ":" + "0" + today.getMinutes() + " am";
+                        timeStr = today.getHours() + ":" + "0" + today.getMinutes() + "am";
                     }
                     else
                     {
-                        timeStr = today.getHours() + ":" + today.getMinutes() + " am";
+                        timeStr = today.getHours() + ":" + today.getMinutes() + "am";
                     }
 
                 }
